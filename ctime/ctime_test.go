@@ -8,7 +8,6 @@ import (
 
 func TestCheckDate(t *testing.T) {
 
-	log.Println(CheckDate("2018-01-09"))
-
+	log.Println(ParseDate("2018-01-09"))
 
 }
