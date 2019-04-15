@@ -25,4 +25,11 @@ func FormatDate(t time.Time) string {
 func FormatTime(t time.Time) string {
 	return t.Format(TIME_TEMP)
 }
+func GetDate() string  {
+	return time.Now().Format(TIME_TEMP)
+}
+func GetMonthLastDay(month string) string {
+	t,_:=time.Parse("2006-01",month)
+	return t.Add(-1*time.Hour).Format("2006-01-02")
+}
 

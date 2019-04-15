@@ -2,10 +2,15 @@
 package ctime
 
 import (
+	"fmt"
 	"log"
 	"testing"
 )
 
+func TestGetMonthLastDay(t *testing.T) {
+
+	fmt.Println(GetMonthLastDay("2018-03"))
+}
 func TestCheckDate(t *testing.T) {
 
 
